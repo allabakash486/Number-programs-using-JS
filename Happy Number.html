@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        num= Number(prompt('Enter the number:'))
+        Happy(num)
+        function sqr(num,sol=0)
+        {
+            while (num!=0)
+            {
+                sol += (num%10**2)
+                num = Math.trunc(num/10)
+            }
+            return sol
+        }
+        function Happy(num)
+        {
+            while (num>9)
+            {
+               num = sqr(num)
+            }
+            if (num==1 || num == 7)
+            {
+                console.log('Happy Number')
+            }
+            else
+            {
+                console.log('Not a Happy Number')
+            }
+        }
+        
+    </script>
+</body>
+</html>

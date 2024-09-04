@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Program</title>
+</head>
+<body>
+    <script> 
+    // Prime Number logic Using Javascript
+        console.log(Prime_number())
+        function Prime_number()
+        {
+            number = Number(prompt('Enter the number:'));
+            for (let i =2;i<=Math.trunc(number/2)+1,i++;)
+            {
+                if (number%i === 0)
+                {
+                    return ' Not a Prime Number'
+                }
+                
+            }
+            return 'Prime number'
+            
+        }
+    </script>
+    
+</body>
+</html>
